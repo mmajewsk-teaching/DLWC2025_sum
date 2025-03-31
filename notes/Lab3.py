@@ -13,10 +13,19 @@
 #     name: python3
 # ---
 
+# +
+# task deadline was 11 55 30 sec
+# -
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_openml
 import pandas as pd
+
+
+def neuron2(x,w):
+    return x@w
+
 
 boston = fetch_openml(name="boston", version=1, as_frame=True)
 
@@ -44,7 +53,7 @@ def correct_weights(x_n, y_n, w):
     return w_0, w_1
 
 
-w_0, w_1 = correct_weights(x_0, y_0, w)
+w_0, w_1 = correct_weights(x, y_pred, w)
 
 w_0, w_1
 
@@ -158,5 +167,9 @@ plt.title(mse_val)
 plt.plot(x_1,y_pred, c='r')
 plt.scatter(x_n, y_n, color="black")
 # -
+
+
+
+
 
 
