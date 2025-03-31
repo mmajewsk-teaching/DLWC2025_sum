@@ -157,6 +157,8 @@ alpha = 0.2  # Learning rate - fraction of correction to apply
 # Iteratively adjust weights
 fig, axe = plt.subplots(3, 3, figsize=(12, 8))
 
+y_pred_init = neuron(x, current_weights)
+
 for i in range(9):
     # @TODO Calculate the correct weights for picked point, based on current_weights
     w_0_ideal, w_1_ideal = ...(..., ..., ...)
