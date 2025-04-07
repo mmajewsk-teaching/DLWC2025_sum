@@ -127,8 +127,8 @@ plt.grid(True)
 # Second layer: 2 neurons
 
 # @TODO extract features and target
-X = data[['...']].values
-y = data[['...']].values 
+X = df['...'].values
+y = df['...'].values 
 
 # Initialize parameters
 input_size = 1
